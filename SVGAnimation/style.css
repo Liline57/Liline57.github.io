@@ -1,0 +1,160 @@
+
+/* GENERAL CSS */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    margin-top: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+.grid-container{
+    display: grid;
+	grid-template-columns: auto auto auto;
+	background-color: rgba(255, 255, 255, 0);
+	grid-gap: 10px;
+    padding: 10px;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.grid-item{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: 5px;
+	height: 100%;
+	padding: 5px 5px 5px 5px;
+    text-align: center;
+} 
+.divider
+{
+	max-width: 50%;
+    height: 4px;
+    background: #000;
+    margin: 2% auto;
+}
+
+/* CAT ANIMATION */
+#pathTail{
+    animation: wave 3s infinite alternate;
+}
+@keyframes wave{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(2deg);
+    }
+}
+#pathRightEye, #pathLeftEye {
+    animation: changecolorcat 3s infinite alternate;
+}
+@keyframes changecolorcat{
+    0%{
+        fill: black;
+    }
+    100%{
+        fill: white;
+    }
+}
+
+/* BURGER ANIMATION */
+#Cheese1, #Cheese2, #Cheese3, #Cheese4{
+    animation: changecolorcheese 4s infinite alternate;
+}
+@keyframes changecolorcheese{
+    0%{
+        fill:white;
+    }
+    50%{
+        fill: yellow;
+    }
+    100%{
+        fill: orange;
+    }
+}
+#RightPickle, #LeftPickle{
+    animation: changecolorpickle 4s infinite alternate; 
+}
+@keyframes changecolorpickle{
+    0%{
+        fill:white;
+    }
+    50%{
+        fill: greenyellow;
+    }
+    100%{
+        fill: green;
+    }
+}
+#Tomato1, #Tomato2, #Tomato3, #Tomato4, #Tomato5{
+    animation: changecolortomato 4s infinite alternate; 
+}
+@keyframes changecolortomato{
+    0%{
+        fill:white;
+    }
+    50%{
+        fill: lightcoral;
+    }
+    100%{
+        fill: red;
+    }
+}
+#Steack1{
+    animation: changecolorsteack 4s infinite alternate; 
+}
+@keyframes changecolorsteack{
+    0%{
+        fill:white;
+    }
+    50%{
+        fill: lightpink;
+    }
+    100%{
+        fill: brown;
+    }
+}
+#Letuce1, #Letuce2, #Letuce3{
+    animation: changecolorletuce 4s infinite alternate; 
+}
+@keyframes changecolorletuce{
+    0%{
+        fill:white;
+    }
+    50%{
+        fill: lightseagreen;
+    }
+    100%{
+        fill: limegreen;
+    }
+}
+#UpperBread, #BottomBread{
+    animation: changecolorbread 4s infinite alternate;     
+}
+@keyframes changecolorbread{
+    0%{
+        fill:white;
+    }
+    50%{
+        fill: gold;
+    }
+    100%{
+        fill: goldenrod;
+    }
+}
+
+/* TRIANGLE ANIMATION */
+#One, #Two, #Three{
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: drawline 10s linear forwards infinite alternate;
+}
+@keyframes drawline {
+    to {
+      stroke-dashoffset: 0;
+    }
+}
